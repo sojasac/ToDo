@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lobster', cursive;
+  color: #F08080;
+  margin: 0 0 50px 0;
+}
+.header_title{
+  font-size: 48px;
+  margin: 0 0 40px 0;
+}
+.header_subTitle{
+  font-size: 30px;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+button{
+  font-family: 'PT Sans Narrow', sans-serif;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+}
+
+#todo_app{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+  padding: 15px 10px 50px 10px;
+  border-radius: 10px;
+}
+.form_container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 7px;
+  width: 100%;
+  justify-content: space-around;
+}
+.form_container input:focus-visible{
+  outline: none;
+}
+.form_container button {
+  width: 20%;
+  margin: 0 0 20px 0;
+}
+.enter_task{
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 0 10px;
+  width: 50%;
+  margin: 0 0 20px 0;
+  padding: 0 10px;
+}
+.add_task-btn{
+  background: #1240AB;
+  color: #fff;
+}
+.del_all-btn{
+  background: #DC143C;
+  color: #fff;
+}
+
+#toCurrent, .current-btn{
+  background: #1240AB;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.complete, .compl-btn{
+  background: #3CB371;
+  color: #fff;
+}
+.content_tasks{
+  width: 100%;
+  text-align: center;
+  border-collapse: separate;
+}
+.content_tasks thead tr{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.content_tasks thead th{
+  width: 30%;
+}
+ tbody tr {
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+.content_tasks tbody td {
+  padding: 10px;
+  width: 30%;
+}
+.actionTd{
+  display: flex;
+  justify-content: space-between;
+}
+.actionTd button {
+  width: 40%;
+  color: #fff;
+}
+.delete{
+  background: #DC143C;
+}
+.undoBtn{
+  background: yellow;
+}
